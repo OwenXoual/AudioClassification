@@ -43,7 +43,7 @@ The only file you need to run is the Testing.ipynb notebook. This notebook allow
 
 After the lengthy preprocessing task, we get the following results :
 - SVM: 59% accuracy for a simple linear kernel SVM. The SVM was performed on raw audio timepoints and will give us the benchmark for the future computation
-- CNN on the sprectograms: 89% accuracy on the test set
-- Transfer learning model: 84% accuracy. 
+- CNN on the sprectograms: 89% accuracy on the validation set
+- Transfer learning model: 84% accuracy on the validation set. 
 
 Suprisingly, we achieved less accuracy with this model when we would expect it to give better resutls than the previous CNN. The confusion matrix shows this model had more trouble identifying female voices than the previous one.
