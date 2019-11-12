@@ -36,8 +36,14 @@ In this 5 day Deep Learning project for the MSc Data Science for Business at Eco
 ## 3 - Get started
 
 We suggest creating a virtual environment and installing the required packages found in the 'requirements.txt' file
-Run XXX
+
+The only file you need to run is the Testing.ipynb notebook. This notebook allows you to load a pre-trained model (such as CNN_handmade_1.pth or CNN_handmade_2.pth) and test it by feeding a test image filepath (can bbe found in the test_image folder that holds various spectrogram images of the testing set) to output a classification (male - 1 or female - 0) 
 
 # Results
 
-XXX
+After the lengthy preprocessing task, we get the following results :
+- SVM: 59% accuracy for a simple linear kernel SVM. The SVM was performed on raw audio timepoints and will give us the benchmark for the future computation
+- CNN on the sprectograms: 89% accuracy on the test set
+- Transfer learning model: 84% accuracy. 
+
+Suprisingly, we achieved less accuracy with this model when we would expect it to give better resutls than the previous CNN. The confusion matrix shows this model had more trouble identifying female voices than the previous one.
